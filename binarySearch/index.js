@@ -1,4 +1,4 @@
-function binarySearch(list, item) {
+export default function binarySearch(list, item) {
   let low = 0;
   let high = list.length - 1;
 
@@ -19,15 +19,4 @@ function binarySearch(list, item) {
 
   return null;
 }
-
-
-
-const list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-
-console.log(binarySearch(list, 10));
-console.log(binarySearch(list, 9));
-console.log(binarySearch(list, 3));
-console.log(binarySearch(list, 1));
-console.log(binarySearch(list, -1));
 
